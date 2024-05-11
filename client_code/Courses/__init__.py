@@ -1,12 +1,10 @@
-from ._anvil_designer import baseTemplate
+from ._anvil_designer import CoursesTemplate
 from anvil import *
-from ..Home import Home
 
 
-class base(baseTemplate):
+class Courses(CoursesTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.content_panel.add_component(Home())
 
     # Any code you write here will run before the form opens.

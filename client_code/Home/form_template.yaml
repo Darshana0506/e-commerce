@@ -1,15 +1,30 @@
 container: {type: ColumnPanel}
 components:
 - name: main_image
-  properties: {source: _/theme/A new study shows that students learn way more effectively from print textbooks than screens.jfif}
+  properties: {source: _/theme/Designer.png}
   type: Image
   layout_properties: {grid_position: 'YENDJI,SZEPXM'}
-- name: label_1
-  properties: {}
+- name: label
+  properties: {text: Have fun in learning instead of spiraling!!, align: center, font_size: 18,
+    italic: true, bold: true, background: ''}
   type: Label
   layout_properties: {grid_position: 'AWWDIK,AJUQBS'}
-- name: button_1
-  properties: {text: button_1}
+- name: view_courses
+  properties:
+    text: 'View Courses
+
+      '
+    visible: true
+    role: [outlined-button, filled-button]
+    icon: fa:arrow-circle-o-right
+    background: white
+    foreground: black
+    border: ''
   type: Button
   layout_properties: {grid_position: 'YADWVT,LEQPLU'}
+  event_bindings: {click: view_courses_click}
+- name: column_panel_1
+  properties: {}
+  type: ColumnPanel
+  layout_properties: {grid_position: 'KDXWYP,OHNKXS'}
 is_package: true
