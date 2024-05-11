@@ -13,15 +13,18 @@ components:
   name: navbar_links
   layout_properties: {slot: nav-right}
   components:
-  - name: courses
+  - name: my_courses
     properties: {text: My courses, icon: 'fa:book'}
     type: Link
     layout_properties: {}
+    event_bindings: {click: my_courses_click}
   - name: sign_in
-    properties: {text: Sign in, icon: 'fa:sign-in'}
+    properties: {text: Sign in, icon: 'fa:user-circle-o'}
     type: Link
     layout_properties: {}
+    event_bindings: {click: sign_in_click}
 - name: title
   properties: {text: Spiral, icon: 'fa:500px'}
   type: Link
   layout_properties: {slot: title}
+  event_bindings: {click: title_click}
