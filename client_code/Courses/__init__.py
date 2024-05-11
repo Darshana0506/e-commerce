@@ -15,6 +15,8 @@ class Courses(CoursesTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     self.load_courses()
+    c=CourseItem(name='Python',button_text='Buy for 100',desciption='Master python')
+    self.content_panel.add_component(c)
     
 
   def load_courses(self):

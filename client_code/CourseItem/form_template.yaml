@@ -1,26 +1,26 @@
 container: {type: ColumnPanel}
 components:
 - name: name
-  properties: {text: name, align: center, bold: true, font_size: 16}
+  properties: {bold: true, align: center, text: name, font_size: 20}
   type: Label
-  layout_properties: {grid_position: 'AOPDRI,JXNYYI'}
+  layout_properties: {grid_position: 'UVLIEK,NLRQTX'}
 - name: content_panel
   properties: {}
   type: ColumnPanel
-  layout_properties: {grid_position: 'SBVAHW,NYDSRO'}
+  layout_properties: {grid_position: 'EUOHGE,TJXFSR'}
   components:
-  - name: image_1
+  - name: image
     properties: {}
     type: Image
-    layout_properties: {grid_position: 'NCZQDP,ZAEPUB'}
+    layout_properties: {grid_position: 'WQYXLR,RFFVCL'}
   - name: description
     properties: {text: description, align: center, font_size: 16}
     type: Label
-    layout_properties: {grid_position: 'CAJZOT,QQJJLP'}
-  - name: buy
-    properties: {text: button_1, bold: true, role: filled-button, font_size: 16}
-    type: Button
-    layout_properties: {grid_position: 'HSCDFJ,NDYDOF'}
+    layout_properties: {grid_position: 'DUZLUF,BBEJXV'}
+- name: buy
+  properties: {text: button_1, role: filled-button, bold: true, font_size: 16}
+  type: Button
+  layout_properties: {grid_position: 'JDMYMY,CAGNSO'}
 is_package: true
 custom_component: true
 properties:

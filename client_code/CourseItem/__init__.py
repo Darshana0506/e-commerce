@@ -10,8 +10,11 @@ from anvil.tables import app_tables
 
 
 class CourseItem(CourseItemTemplate):
-  def __init__(self, **properties):
+  def __init__(self,name,description,button_text, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
+    self.name.text = name
+    self.description = description
+    self.buy.text = button_text
 
     # Any code you write here will run before the form opens.
