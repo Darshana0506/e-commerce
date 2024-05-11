@@ -1,11 +1,11 @@
 container: {type: ColumnPanel}
 components:
-- name: content_panel
+- name: label_1
   properties: {}
   type: ColumnPanel
   layout_properties: {grid_position: 'JQLULN,CFHWAD'}
   components:
-  - name: label_1
+  - name: courses_label
     properties: {text: 'My courses
 
         '}
