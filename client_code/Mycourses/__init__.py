@@ -1,5 +1,6 @@
 from ._anvil_designer import MycoursesTemplate
 from anvil import *
+import anvil.server
 import anvil.google.auth, anvil.google.drive
 from anvil.google.drive import app_files
 import anvil.tables as tables
@@ -13,4 +14,6 @@ class Mycourses(MycoursesTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
-    # Any code you write here will run before the form opens.
+  def load_courses(self):
+    courses = anvil.server.call("")
+

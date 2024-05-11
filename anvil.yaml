@@ -47,5 +47,31 @@ db_schema:
     - name: signed_up
       admin_ui: {order: 7, width: 200}
       type: datetime
+    - name: Column9
+      admin_ui: {width: 200, order: 8}
+      type: simpleObject
     title: Users
+  courses:
+    client: none
+    server: full
+    columns:
+    - name: Name
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: Price
+      admin_ui: {width: 200, order: 1}
+      type: number
+    - name: created
+      admin_ui: {width: 200, order: 2}
+      type: datetime
+    - name: description
+      admin_ui: {width: 200, order: 3}
+      type: string
+    - name: image
+      admin_ui: {width: 200, order: 4}
+      type: media
+    - name: id_name
+      admin_ui: {width: 200, order: 5}
+      type: string
+    title: Courses
 renamed: true
