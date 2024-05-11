@@ -9,6 +9,6 @@ import anvil.server
 
 
 @anvil.server.callable
-def get_course_details(name):
+def get_course_details():
   return app_tables.courses.client_readable()
 #
