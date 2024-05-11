@@ -1,9 +1,11 @@
 unique_ids:
   forms:
-    Form1: OJT73PR6TLQPTYYJVWZ35DP2ZBXDYP6X
+    Home: '1715389692995565562902044.8838'
+    base: OJT73PR6TLQPTYYJVWZ35DP2ZBXDYP6X
   modules: {}
   server_modules: {}
   assets:
+    A new study shows that students learn way more effectively from print textbooks than screens.jfif: '1715390251407864837327620.0582'
     standard-page.html: RK33UHPRR53REL4G24SXD5EBRMSP24V2
     theme.css: YNMOBX46JMJM3GUPRF7PB2A5S2DK6RVY
   scripts: {}

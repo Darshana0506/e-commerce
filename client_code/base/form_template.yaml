@@ -1,0 +1,27 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: content_panel
+  layout_properties: {slot: default}
+  components: []
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
+  components:
+  - name: courses
+    properties: {text: My courses, icon: 'fa:book'}
+    type: Link
+    layout_properties: {}
+  - name: sign_in
+    properties: {text: Sign in, icon: 'fa:sign-in'}
+    type: Link
+    layout_properties: {}
+- name: title
+  properties: {text: Spiral, icon: 'fa:500px'}
+  type: Link
+  layout_properties: {slot: title}
