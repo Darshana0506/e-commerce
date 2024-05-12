@@ -1,3 +1,4 @@
+import anvil.stripe
 import anvil.google.auth, anvil.google.drive, anvil.google.mail
 from anvil.google.drive import app_files
 import anvil.users
@@ -8,7 +9,9 @@ import anvil.server
 
 @anvil.server.callable
 def get_course_details(course_name):
-  return app_tables.courses.get(id_name=course_name)
+    return app_tables.courses.get(id_name=course_name)
+
+
 
 @anvil.server.callable
 def get_all_courses():

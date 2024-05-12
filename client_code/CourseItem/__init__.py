@@ -1,5 +1,6 @@
 from ._anvil_designer import CourseItemTemplate
 from anvil import *
+import stripe.checkout
 import anvil.server
 import anvil.google.auth, anvil.google.drive
 from anvil.google.drive import app_files
@@ -24,4 +25,3 @@ class CourseItem(CourseItemTemplate):
   def button_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.button_callback(self.name_label.content.lower())
-    self.button_callback()
