@@ -6,9 +6,11 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 import anvil.server
 
-
+@anvil.server.callable
+def get_course_details(course_name):
+  return app_tables.courses.get(id_name=course_name)
 
 @anvil.server.callable
-def get_course_details():
+def get_all_courses():
   return app_tables.courses.client_readable()
 #

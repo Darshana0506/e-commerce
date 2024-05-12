@@ -17,5 +17,11 @@ class CourseItem(CourseItemTemplate):
     self.description_label.content = description
     self.button.text = button_text
     self.image_content.source = image
+    self.button_callback=button_callback
 
     # Any code you write here will run before the form opens.
+
+  def button_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    self.button_callback(self.name_label.content.lower())
+    self.button_callback()

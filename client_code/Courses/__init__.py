@@ -8,6 +8,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 import anvil.users
 from ..CourseItem import CourseItem
+from ..Checkout import Checkout
 
 
 
@@ -16,11 +17,21 @@ class Courses(CoursesTemplate):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     self.load_courses()
-    
+
+  def back(self):
+    self.content_panel.clear()
+    self.load_courses()
+
+  def render_checkout(self,course_name):
+    self.content_panel.clear()
+    self.content_panel.add_component(Checkout(course_name, self.back))
 
   def load_courses(self):
-    courses = anvil.server.call('get_course_details').search()
+    courses = anvil.server.call('get_all_courses').search()
+    course_panel = GridPanel()
     
-    for course in courses:
-      c = CourseItem(name=course['name'], button_text=f"Purchase for Rs{course['price']}", description=course['description'], image=course["image"], button_callback=None)
-      self.content_panel.add_component(c)
+    for i,course in enumerate(courses):
+      c = CourseItem(name=course['name'], button_text=f"Purchase for Rs{course['price']}", description=course['description'], image=course["image"], button_callback=self.render_checkout)
+      course_panel.add_component(c,row=str(i//2), width_xs=6)
+
+    self.content_panel.add_component(course_panel)
