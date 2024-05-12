@@ -1,4 +1,4 @@
-from ._anvil_designer import MycoursesTemplate
+from ._anvil_designer import MyCoursesTemplate
 from anvil import *
 import anvil.server
 import anvil.google.auth, anvil.google.drive
@@ -9,7 +9,7 @@ from anvil.tables import app_tables
 import anvil.users
 
 
-class Mycourses(MycoursesTemplate):
+class MyCourses(MyCoursesTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)

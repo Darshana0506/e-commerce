@@ -14,7 +14,7 @@ components:
   layout_properties: {slot: nav-right}
   components:
   - name: my_courses
-    properties: {text: My courses, icon: 'fa:book'}
+    properties: {text: My Courses, icon: 'fa:book'}
     type: Link
     layout_properties: {}
     event_bindings: {click: my_courses_click}

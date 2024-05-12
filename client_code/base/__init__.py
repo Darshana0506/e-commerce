@@ -8,7 +8,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 import anvil.users
 from ..Home import Home
-from ..Mycourses import Mycourses
+from ..MyCourses import MyCourses
 
 class base(baseTemplate):
   def __init__(self, **properties):
@@ -38,7 +38,7 @@ class base(baseTemplate):
   def my_courses_click(self, **event_args):
     """This method is called when the link is clicked"""
     self.content_panel.clear()
-    self.content_panel.add_component(Mycourses())
+    self.content_panel.add_component(MyCourses())
 
   def go_to_home(self):
     self.content_panel.clear()

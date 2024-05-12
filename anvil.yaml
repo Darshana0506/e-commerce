@@ -55,11 +55,11 @@ db_schema:
     client: none
     server: full
     columns:
-    - name: Name
-      admin_ui: {width: 200, order: 0}
+    - name: name
+      admin_ui: {order: 0, width: 200}
       type: string
-    - name: Price
-      admin_ui: {width: 200, order: 1}
+    - name: price
+      admin_ui: {order: 1, width: 200}
       type: number
     - name: created
       admin_ui: {width: 200, order: 2}
