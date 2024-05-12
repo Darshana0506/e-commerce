@@ -48,6 +48,8 @@ class Checkout(CheckoutTemplate):
       alert('success')
     except Exception as e:
       alert(str(e))
+
+    print(info)
   
   def back_button_click(self, **event_args):
     """This method is called when the button is clicked"""
