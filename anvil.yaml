@@ -20,6 +20,7 @@ allow_embedding: false
 name: M3 App 2
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
+metadata: {title: Spiral, description: Programming courses.}
 startup_form: null
 db_schema:
   users:
