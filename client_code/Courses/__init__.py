@@ -22,5 +22,5 @@ class Courses(CoursesTemplate):
     courses = anvil.server.call('get_course_details').search()
     
     for course in courses:
-      c = CourseItem(name=course['name'], button_text=f"Purchase for Rs{course['price']}", description=course["description"], image=course["image"], button_callback=None)
+      c = CourseItem(name=course['name'], button_text=f"Purchase for Rs{course['price']}", description=course['description'], image=course["image"], button_callback=None)
       self.content_panel.add_component(c)

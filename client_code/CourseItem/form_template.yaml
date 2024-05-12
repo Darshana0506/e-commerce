@@ -20,7 +20,7 @@ components:
   - name: button
     properties: {text: button_1, role: filled-button, bold: true, font_size: 16}
     type: Button
-    layout_properties: {grid_position: 'OQYCIE,RZNNHU'}
+    layout_properties: {grid_position: 'ARMATK,KPPTFF'}
 is_package: true
 custom_component: true
 properties:
